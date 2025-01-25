@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1 Minute Timer</title>
+        <style>
+          /* Body and Container Styles */
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+          }
+      
+          .timer-container {
+            text-align: center;
+            background-color: #6200ea;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 20px;
+          }
+      
+          #timer {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 20px;
+          }
+
+          /* Styles for the gif image */
+          .gif-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+          }
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        </style>
+    </head>
+    <body>
+        <!-- Timer Container on the Left -->
+        <div class="timer-container">
+          <h1>Timer</h1>
+          <div id="timer">01:00</div>
+        </div>
+
+        <!-- Gif Display Area -->
+        <div class="gif-container">
+          <img src="https://i.pinimg.com/originals/af/f1/b7/aff1b7bf1dea681c9f494cbeb95b1234.gif" alt="Timer GIF">
+        </div>
+      
+        <script>
+          // JavaScript Timer
+          let timeLeft = 60; // 1 minute in seconds
+          const timerElement = document.getElementById('timer');
+
+          const updateTimer = () => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            if (timeLeft === 0) {
+              clearInterval(timerInterval); // Stop the timer
+              alert('Time is up!');
+            } else {
+              timeLeft--;
+            }
+          };
+
+          // Start the timer
+          const timerInterval = setInterval(updateTimer, 1000); // Update every second
+        </script>
+    </body>
+</html>

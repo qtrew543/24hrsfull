@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Health Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkalLP6TsJQlePADBRf05oBl9Wq1MM7h6Xg&s">
+    <h1>Personalized Health Assistant</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bmi.html">Bmi Calculator</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="diet.html">Diet plan</a>
+    <a href="exercise.html">Workout</a>
+    <a href="overview.html">Overview</a>
+    <a href="#plans" onclick="showPage('plans')">Plans</a>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="container" style="padding: 0;">
+    <h2 style="padding: 1rem;">Welcome to Personalized Health Assistant</h2>
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="WhatsApp Image 2025-01-24 at 4.16.30 PM.jpeg" alt="Slide 1">
+        <img src="WhatsApp Image 2025-01-24 at 4.16.31 PM (1).jpeg" alt="Slide 2">
+        <img src="WhatsApp Image 2025-01-24 at 4.16.31 PM.jpeg" alt="Slide 3">
+      </div>
+    </div>
+    <p style="padding: 1rem;">Your journey to better health starts here. Navigate through the menu to explore!</p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Us</h2>
+    <p>We are dedicated to improving your health through a combination of personalized BMI insights, fitness plans, and dietary recommendations. Navigate through our tools to start your journey today!</p>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="container">
+    <h2>Our Plans</h2>
+    <div id="plans-container">
+      <!-- Basic Plan -->
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <img src="https://assets.kimscuddles.com/production/images/doctors/dr-santhosh-routhu-cuddles-new-web-photo-size-255x250-px_1734781837.jpg" alt="Basic Plan" class="plan-image">
+        <p><strong>Price:</strong> Free</p>
+        <p>Includes basic BMI tracking and general recommendations.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="3ee141ac-9718-43ac-83c9-f00b6698019e">
+          <div class="form-group">
+            <label for="name-basic">Name</label>
+            <input type="text" id="name-basic" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email-basic">Email</label>
+            <input type="email" id="email-basic" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="required-basic">Required</label>
+            <input type="text" id="required-basic" name="Required" required>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan">
+        <h3>Premium Plan</h3>
+        <img src="https://omnihospitals.in/wp-content/uploads/2017/06/Kothapet-Omni-Doctors-200x250px.jpg" alt="Premium Plan" class="plan-image">
+        <p><strong>Price:</strong> $9.99/month</p>
+        <p>Includes personalized workout and diet plans, plus weekly progress reports.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="3ee141ac-9718-43ac-83c9-f00b6698019e">
+          <div class="form-group">
+            <label for="name-premium">Name</label>
+            <input type="text" id="name-premium" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email-premium">Email</label>
+            <input type="email" id="email-premium" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="required-premium">Required</label>
+            <input type="text" id="required-premium" name="Required" required>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Elite Plan -->
+      <div class="plan">
+        <h3>Elite Plan</h3>
+        <img src="https://omnihospitals.in/wp-content/uploads/2017/06/DrRaghudeepPulmonologist.jpg" alt="Elite Plan" class="plan-image">
+        <p><strong>Price:</strong> $29.99/month</p>
+        <p>Includes 1-on-1 coaching, custom plans, and 24/7 support.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="3ee141ac-9718-43ac-83c9-f00b6698019e">
+          <div class="form-group">
+            <label for="name-elite">Name</label>
+            <input type="text" id="name-elite" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email-elite">Email</label>
+            <input type="email" id="email-elite" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="required-elite">Required</label>
+            <input type="text" id="required-elite" name="Required" required>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

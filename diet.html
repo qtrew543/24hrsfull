@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plans</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6200ea;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #6200ea;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .diet-plan {
+            border: 2px solid #6200ea;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .diet-plan h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color:  #6200ea;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+
+        .diet-plan ul {
+            list-style-type: square;
+            padding-left: 1.5rem;
+        }
+
+        .diet-plan ul li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .diet-plan ul li ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .diet-plan h2 {
+                font-size: 1.5rem;
+            }
+
+            .diet-plan ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diet Plans for a Healthy Lifestyle</h1>
+    </header>
+    <nav>
+        <a href="#BalancedDiet">Balanced Diet</a>
+        <a href="#RawFoodDiet">Raw Food Diet</a>
+        <a href="#VeganDiet">Vegan Diet</a>
+        <a href="#KetoDiet">Keto Diet</a>
+        <a href="#LowCarbDiet">Low Carb Diet</a>
+        <a href="#LowFatDiet">Low Fat Diet</a>
+        <a href="#IntermittentFasting">Intermittent Fasting</a>
+    </nav>
+    <div class="container">
+        <div class="diet-plan">
+            <h2 id="BalancedDiet">Balanced Diet</h2>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Scrambled eggs with whole-grain toast and orange juice</li>
+                        <li>Lunch: Grilled chicken, mixed veggies, and quinoa</li>
+                        <li>Snacktime: Greek yogurt with honey and walnuts</li>
+                        <li>Dinner: Baked salmon, steamed broccoli, and brown rice</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Oatmeal with fresh berries and almonds</li>
+                        <li>Lunch: Turkey sandwich with whole-grain bread and salad</li>
+                        <li>Snacktime: Carrot sticks with hummus</li>
+                        <li>Dinner: Stir-fried tofu with bell peppers and rice noodles</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie with banana, spinach, and almond milk</li>
+                        <li>Lunch: Grilled chicken Caesar salad</li>
+                        <li>Snacktime: Apple slices with peanut butter</li>
+                        <li>Dinner: Beef stew with carrots and potatoes</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Whole-grain pancakes with maple syrup and strawberries</li>
+                        <li>Lunch: Quinoa salad with roasted veggies</li>
+                        <li>Snacktime: Mixed nuts</li>
+                        <li>Dinner: Grilled shrimp with asparagus and couscous</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Poached eggs with avocado toast</li>
+                        <li>Lunch: Lentil soup and whole-grain bread</li>
+                        <li>Snacktime: Celery sticks with almond butter</li>
+                        <li>Dinner: Roasted chicken with sweet potatoes and green beans</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Yogurt parfait with granola and blueberries</li>
+                        <li>Lunch: Tuna salad with spinach and cherry tomatoes</li>
+                        <li>Snacktime: Cheese slices with whole-grain crackers</li>
+                        <li>Dinner: Grilled steak with sautéed mushrooms and green beans</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie bowl with mixed fruits and chia seeds</li>
+                        <li>Lunch: Veggie wrap with hummus and sprouts</li>
+                        <li>Snacktime: Dark chocolate and almonds</li>
+                        <li>Dinner: Roasted turkey with mashed cauliflower and steamed carrots</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="RawFoodDiet">Raw Food Diet</h2>
+            <br>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Fresh fruit salad</li>
+                        <li>Lunch: Raw vegetable salad with nuts and seeds</li>
+                        <li>Snacktime: Raw energy balls made with dates and cocoa</li>
+                        <li>Dinner: Zucchini noodles with raw tomato sauce</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Green smoothie with kale, banana, and almond milk</li>
+                        <li>Lunch: Fresh fruit platter and almond milk smoothie</li>
+                        <li>Snacktime: Raw veggies with guacamole</li>
+                        <li>Dinner: Mixed greens with avocado and lemon dressing</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Chia seed pudding with fresh berries</li>
+                        <li>Lunch: Raw veggie wraps with hummus</li>
+                        <li>Snacktime: Handful of soaked almonds</li>
+                        <li>Dinner: Raw sushi rolls with cauliflower rice</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Fresh coconut water and sliced mango</li>
+                        <li>Lunch: Raw pasta made from spiralized zucchini and cashew cheese</li>
+                        <li>Snacktime: Apple slices with almond butter</li>
+                        <li>Dinner: Raw kale salad with dried cranberries</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie bowl with raw granola</li>
+                        <li>Lunch: Marinated mushrooms with mixed greens</li>
+                        <li>Snacktime: Dried apricots and walnuts</li>
+                        <li>Dinner: Raw veggie stir-fry with sesame sauce</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Papaya and lime slices</li>
+                        <li>Lunch: Raw vegan pizza with nut-based crust</li>
+                        <li>Snacktime: Coconut yogurt with chia seeds</li>
+                        <li>Dinner: Raw cauliflower rice with avocado and herbs</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie with pineapple, spinach, and coconut milk</li>
+                        <li>Lunch: Raw beet and carrot salad</li>
+                        <li>Snacktime: Raw chocolate bar</li>
+                        <li>Dinner: Veggie-stuffed raw bell peppers</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="VeganDiet">Vegan Diet</h2>
+            <br>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie bowl with almond milk, banana, and granola</li>
+                        <li>Lunch: Lentil soup with whole-grain bread</li>
+                        <li>Snacktime: Sliced cucumbers with hummus</li>
+                        <li>Dinner: Stir-fried tofu with mixed vegetables and quinoa</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Oatmeal with almond butter and fresh berries</li>
+                        <li>Lunch: Chickpea salad with avocado and lemon dressing</li>
+                        <li>Snacktime: Roasted chickpeas</li>
+                        <li>Dinner: Vegan pasta with tomato sauce and a side of spinach salad</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Chia seed pudding with almond milk and mango</li>
+                        <li>Lunch: Vegan wrap with hummus, avocado, and veggies</li>
+                        <li>Snacktime: Apple slices with almond butter</li>
+                        <li>Dinner: Vegan curry with chickpeas and basmati rice</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Whole-grain toast with avocado and nutritional yeast</li>
+                        <li>Lunch: Quinoa salad with roasted sweet potatoes and kale</li>
+                        <li>Snacktime: Handful of walnuts</li>
+                        <li>Dinner: Stuffed bell peppers with brown rice and black beans</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie with spinach, mango, and coconut water</li>
+                        <li>Lunch: Vegan Buddha bowl with tofu, quinoa, and veggies</li>
+                        <li>Snacktime: Dark chocolate and almonds</li>
+                        <li>Dinner: Eggplant lasagna with cashew cream</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Vegan pancakes with maple syrup and strawberries</li>
+                        <li>Lunch: Tomato and basil soup with whole-grain crackers</li>
+                        <li>Snacktime: Carrot sticks with guacamole</li>
+                        <li>Dinner: Vegan stir-fry with tempeh and rice noodles</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Acai bowl with granola and coconut flakes</li>
+                        <li>Lunch: Vegan burger with a side of mixed greens</li>
+                        <li>Snacktime: Energy balls made with dates and oats</li>
+                        <li>Dinner: Lentil loaf with mashed potatoes and green beans</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="KetoDiet">Keto Diet</h2>
+            <br>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Keto scarmbled eggs with cheese and avacado</li>
+                        <li>Lunch: Grilled chicken salad with olive oil and lemon dressing</li>
+                        <li>Snacktime: Cheese cubes</li>
+                        <li>Dinner: Beef stir-fry with broccoli and coconut oil</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Coconut milk smoothie with spinach and almond butter</li>
+                        <li>Lunch: Zucchini noodles with pesto and grilled shrimp</li>
+                        <li>Snacktime: Handful of pecans</li>
+                        <li>Dinner: Pork tenderloin with sautéed kale</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Keto pancakes with butter</li>
+                        <li>Lunch: Grilled salmon salad with avocado</li>
+                        <li>Snacktime: Hard-boiled eggs</li>
+                        <li>Dinner: Chicken thighs with cauliflower mash</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Avocado and bacon on a low-carb wrap</li>
+                        <li>Lunch: Keto turkey and cheese roll-ups</li>
+                        <li>Snacktime: Pork rinds</li>
+                        <li>Dinner: Ribeye steak with garlic butter and roasted zucchini</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Scrambled eggs with spinach and feta</li>
+                        <li>Lunch: Chicken Caesar salad (no croutons)</li>
+                        <li>Snacktime: Olives</li>
+                        <li>Dinner: Grilled lamb chops with asparagus</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Keto smoothie bowl with chia seeds and coconut milk</li>
+                        <li>Lunch: Tuna salad lettuce wraps</li>
+                        <li>Snacktime: Dark chocolate (90% cocoa)</li>
+                        <li>Dinner: Baked salmon with roasted Brussels sprouts</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Omelet with mushrooms and goat cheese</li>
+                        <li>Lunch: Pulled pork with coleslaw</li>
+                        <li>Snacktime: Almond butter on celery sticks</li>
+                        <li>Dinner: Grilled chicken wings with a side salad</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="LowCarbDiet">Low Carb Diet</h2>
+            <br>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Scrambled eggs with avocado slices</li>
+                        <li>Lunch: Grilled chicken Caesar salad (no croutons)</li>
+                        <li>Snacktime: Hard-boiled egg</li>
+                        <li>Dinner: Grilled salmon with sautéed zucchini noodles</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Greek yogurt with a handful of almonds</li>
+                        <li>Lunch: Turkey lettuce wraps with avocado</li>
+                        <li>Snacktime: Sliced cucumber with guacamole</li>
+                        <li>Dinner: Steak with roasted asparagus and a side of cauliflower mash</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie with spinach, unsweetened almond milk, and peanut butter</li>
+                        <li>Lunch: Grilled shrimp salad with olive oil and lemon dressing</li>
+                        <li>Snacktime: String cheese</li>
+                        <li>Dinner: Pork chops with roasted Brussels sprouts</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Omelet with mushrooms and cheddar cheese</li>
+                        <li>Lunch: Cobb salad with grilled chicken, avocado, and a boiled egg</li>
+                        <li>Snacktime: Handful of macadamia nuts</li>
+                        <li>Dinner: Baked chicken thighs with sautéed spinach</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Fried eggs with turkey bacon</li>
+                        <li>Lunch:  Salmon patties with a side of coleslaw</li>
+                        <li>Snacktime: Celery sticks with cream cheese</li>
+                        <li>Dinner: Lamb chops with roasted cauliflower</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Keto pancakes with sugar-free syrup</li>
+                        <li>Lunch: Tuna salad with mayonnaise and a side of spinach</li>
+                        <li>Snacktime: Almonds and walnuts</li>
+                        <li>Dinner: Grilled steak with garlic butter and sautéed mushrooms</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie bowl with low-carb berries and coconut flakes</li>
+                        <li>Lunch: Grilled chicken with avocado and tomato salad</li>
+                        <li>Snacktime: Deviled eggs</li>
+                        <li>Dinner: Broiled fish with roasted broccoli</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="LowFatDiet">Low Fat Diet</h2>
+            <br>
+            <br>
+
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Breakfast: Egg white omelet with spinach and a slice of whole-grain toast.</li>
+                        <li>Lunch: Grilled chicken salad with mixed greens and a balsamic vinaigrette.</li>
+                        <li>Snacktime: Low-fat yogurt with a sprinkle of granola.</li>
+                        <li>Dinner: Baked cod with steamed green beans and brown rice.</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Breakfast: Oatmeal with skim milk and sliced bananas</li>
+                        <li>Lunch: Turkey sandwich on whole-grain bread with mustard and a side salad.</li>
+                        <li>Snacktime: Air-popped popcorn.</li>
+                        <li>Dinner: Grilled shrimp with roasted sweet potatoes and steamed broccoli.</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie with skim milk, frozen berries, and a scoop of protein powder</li>
+                        <li>Lunch: Lentil soup with a slice of whole-grain bread</li>
+                        <li>Snacktime: Apple slices with low-fat cottage cheese</li>
+                        <li>Dinner: Stir-fried tofu with mixed vegetables and rice noodles</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Breakfast: Whole-grain cereal with skim milk and fresh strawberries</li>
+                        <li>Lunch: Grilled chicken wrap with lettuce, tomato, and a low-fat dressing</li>
+                        <li>Snacktime: Baby carrots with hummus</li>
+                        <li>Dinner: Baby carrots with hummus</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Breakfast: Greek yogurt with a handful of fresh blueberries and chia seeds</li>
+                        <li>Lunch: Salmon salad with spinach, cucumbers, and a light vinaigrette</li>
+                        <li>Snacktime: Sliced cucumber and low-fat ranch dip</li>
+                        <li>Dinner:  Grilled turkey burger with a side of baked zucchini fries</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Breakfast: Smoothie bowl with mixed fruits, low-fat granola, and almond butter</li>
+                        <li>Lunch: Quinoa salad with chickpeas and diced vegetables</li>
+                        <li>Snacktime: Rice cakes with almond butter</li>
+                        <li>Dinner: Baked chicken with sautéed spinach and a side of wild rice</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Breakfast: Scrambled egg whites with sautéed mushrooms and a slice of whole-grain toast</li>
+                        <li>Lunch: Tuna salad with arugula and a lemon dressing</li>
+                        <li>Snacktime: Low-fat string cheese with a handful of grapes</li>
+                        <li>Dinner: Grilled tilapia with roasted Brussels sprouts and quinoa</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="diet-plan">
+            <h2 id="IntermittentFasting">Intermittent Fasting</h2>
+            <br>
+            <br>
+            <ul>
+                <li><h3><b>Day 1:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Grilled chicken with quinoa and steamed broccoli</li>
+                        <li>Snacktime(3:00pm): Handful of almonds and a boiled egg</li>
+                        <li>Dinner(7:00pm): Baked salmon with roasted sweet potatoes and asparagus</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 2:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Lentil soup with a slice of whole-grain bread</li>
+                        <li>Snacktime(3:00pm): Greek yogurt with a drizzle of honey and chia seeds</li>
+                        <li>Dinner(7:00pm): Grilled turkey breast with sautéed spinach and wild rice</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 3:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm):  Tuna salad with spinach, avocado, and olive oil</li>
+                        <li>Snacktime(3:00pm):  Apple slices with peanut butter</li>
+                        <li>Dinner(7:00pm): Grilled beef steak with cauliflower mash and green beans</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 4:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Chickpea salad with cucumbers, tomatoes, and tahini dressing</li>
+                        <li>Snacktime(3:00pm): Baby carrots with hummus</li>
+                        <li>Dinner(7:00pm): Grilled shrimp with zucchini noodles and pesto</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 5:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Vegan Buddha bowl with quinoa, roasted veggies, and tofu</li>
+                        <li>Snacktime(3:00pm): Rice cakes topped with almond butter</li>
+                        <li>Dinner(7:00pm): Herb-roasted chicken with mashed sweet potatoes and sautéed kale</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 6:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Avocado toast on whole-grain bread with a side of fresh fruit</li>
+                        <li>Snacktime(3:00pm): Dark chocolate (85% cocoa) with a handful of mixed nuts</li>
+                        <li>Dinner(7:00pm):  Baked cod with roasted Brussels sprouts and quinoa</li>
+                    </ul>
+                </li>
+                <li><h3><b>Day 7:</b></h3>
+                    <ul>
+                        <li>Lunch(12:00pm): Baked cod with roasted Brussels sprouts and quinoa</li>
+                        <li>Snacktime(3:00pm): Greek yogurt with mixed berries</li>
+                        <li>Dinner(7:00pm): Grilled turkey patties with sautéed zucchini and roasted carrots</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
